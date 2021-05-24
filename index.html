@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMCC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <a class="OK">BMCC</a>
+        <ul>
+            <li><a href="#merch">Our Merch</a></li>
+            <li><a href="#desk">About us</a></li>
+            <li><a href="#event"">Event</a></li>
+        </ul>
+        <a class="CO">Contact</a>
+    </header>
+    <section>
+        <img src="assets/HG.png" id="back">
+        <h1 id="text">BMCC</h1>
+        <!-- <img src="assets/bmcc.png" id="text"> -->
+        <img src="assets/BINUSMALANG.png" id="front">
+    </section>
+    <div class="desk" id="desk">
+        <h2>About us</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eveniet ducimus laboriosam repellendus in quis neque laborum, aperiam quaerat? Aliquid tempora unde praesentium eius nobis accusantium voluptatem dolorem facere natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur mollitia iusto dolore nihil aliquam culpa beatae illo, laborum ipsam dolorum laboriosam harum, error delectus eaque? Dignissimos exercitationem vel rerum. Adipisci.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis fuga earum obcaecati voluptates sit impedit, ipsa omnis autem repellat accusamus amet facilis quisquam in sint, enim perferendis ea architecto quam?l
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eos quaerat alias ipsam, reiciendis blanditiis quas quo, quis dolorum fugit sit? Officia illum facilis ducimus architecto itaque tenetur temporibus. Libero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa, iusto laborum fugiat fuga et voluptate eligendi numquam qui expedita officiis eum ipsum architecto ad. Consequatur quae consectetur tempore officia!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, cupiditate error quos quae aliquid mollitia fuga nihil, obcaecati provident, cum quasi! Fugiat ea laborum repellendus reiciendis voluptas dolore voluptatum ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat commodi hic! Incidunt dicta molestiae minus rem. Quaerat delectus molestias accusantium, possimus aliquam quis nulla qui facere architecto, fuga obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque, dolorum praesentium inventore quam atque voluptates, nobis illo repudiandae facere expedita excepturi quae aspernatur pariatur rerum deleniti! Quas, quasi aut!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis inventore eius non corrupti quod nostrum earum doloremque quasi quisquam ullam nulla iusto ratione aliquam quas dignissimos vel et sit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est laudantium facilis esse recusandae nemo fugiat a praesentium, excepturi tempora quia fugit asperiores ratione iure nostrum nisi! Iure et molestiae totam?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eveniet ducimus laboriosam repellendus in quis neque laborum, aperiam quaerat? Aliquid tempora unde praesentium eius nobis accusantium voluptatem dolorem facere natus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur mollitia iusto dolore nihil aliquam culpa beatae illo, laborum ipsam dolorum laboriosam harum, error delectus eaque? Dignissimos exercitationem vel rerum. Adipisci.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis fuga earum obcaecati voluptates sit impedit, ipsa omnis autem repellat accusamus amet facilis quisquam in sint, enim perferendis ea architecto quam?l
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eos quaerat alias ipsam, reiciendis blanditiis quas quo, quis dolorum fugit sit? Officia illum facilis ducimus architecto itaque tenetur temporibus. Libero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa, iusto laborum fugiat fuga et voluptate eligendi numquam qui expedita officiis eum ipsum architecto ad. Consequatur quae consectetur tempore officia!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, cupiditate error quos quae aliquid mollitia fuga nihil, obcaecati provident, cum quasi! Fugiat ea laborum repellendus reiciendis voluptas dolore voluptatum ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat commodi hic! Incidunt dicta molestiae minus rem. Quaerat delectus molestias accusantium, possimus aliquam quis nulla qui facere architecto, fuga obcaecati!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque, dolorum praesentium inventore quam atque voluptates, nobis illo repudiandae facere expedita excepturi quae aspernatur pariatur rerum deleniti! Quas, quasi aut!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, perspiciatis inventore eius non corrupti quod nostrum earum doloremque quasi quisquam ullam nulla iusto ratione aliquam quas dignissimos vel et sit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est laudantium facilis esse recusandae nemo fugiat a praesentium, excepturi tempora quia fugit asperiores ratione iure nostrum nisi! Iure et molestiae totam?
+        </p>
+    </div>
+    <script>
+        let cloud = document.getElementById('back');
+        let text = document.getElementById('text');
+        let binus = document.getElementById('front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            cloud.style.top = value *0.5+'px';
+            binus.style.top = value *0  +'px';
+            text.style.marginRight = value *0.40+'px';
+            text.style.marginTop = value *0.40+'px';
+            header.style.top = value *0.90+'px';
+        })
+    </script>
+</body>
+</html>
