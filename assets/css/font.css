@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
     font-family: Chronicle;
     src: url(../fonts/Chronicle/Chronicle\ Display\ Roman.woff);
 }

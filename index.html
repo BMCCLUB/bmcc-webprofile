@@ -35,15 +35,59 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Test Font -->
-    <h1>Test Dulu</h1>
-    <h1 style="font-family: Gilroy;">Test Dulu</h1>
-    <h1 style="font-family: Chronicle;">Test Dulu</h1>
-    <h1 style="font-family: Mulish;">Test Dulu</h1>
-    <h1 style="font-family: Quartzo;">Test Dulu</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar-custom">
+        <div class="logo">
+            <a href="#">BMCC</a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Our Merch</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Event</a></li>
+        </ul>
+        <div class="contact">
+            <a href="#" class="btn-contact">CONTACT</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <section class="banner">
+            <img src="assets/images/Awan.png" alt="Banner Background" id="awan">
+            <div class="filter-banner" id="filter"></div>
+            <h1 id="title-banner">BMCC</h1>
+            <img src="assets/images/BINUS  MALANG2.png" alt="Banner Gedung" id="gedung">
+            <div id="text-banner">
+                <div class="bmcc-judul">
+                    <hr>
+                    <h5>BINUS MALANG COMPUTER CLUB</h5>
+                </div>
+                <h2>Be Prepared For The<br> Future And Beyond!</h2>
+                <div class="scroll-down">
+                    <center><span>Scroll Down</span><i class="fas fa-arrow-down"></i></center>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+
+        </section>
+    </main>
 
     <!-- jQuery and Bootstrap Bundle -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f0f2d9386c.js" crossorigin="anonymous"></script>
+    <script>
+        let awan = document.getElementById("awan");
+        let title = document.getElementById("title-banner");
+        let gedung = document.getElementById("gedung");
+        let text = document.getElementById("text-banner");
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            // awan.style.top = value * 1 + 'px';
+            title.style.marginTop = value * 2 + 'px';
+            gedung.style.top = value * 0.5 + 'px';
+        });
+    </script>
 </body>
 </html>
