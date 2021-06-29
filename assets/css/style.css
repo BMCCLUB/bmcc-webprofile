@@ -160,3 +160,71 @@
     height: 100vh;
     background-color: #0B1D26;
 }
+
+.merch {
+    position: relative;
+    height: 100vh;
+    background-color: #0B1D26;
+}
+
+.kotak-merch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kotak-bewarna {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(208.18deg, #FBD784 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+}
+
+.kotak-bewarna img {
+    width: 60%;
+    z-index: 5;
+}
+
+.nama-merch-kanan {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    color: #000000;
+    opacity: 0.1;
+}
+
+.nama-merch-kiri {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    color: #000000;
+    opacity: 0.1;
+}
+
+.nama-merch-kanan h5{
+    font-family: Gilroy-Bold;
+    font-size: 6em;
+}
+
+.nama-merch-kiri h5{
+    font-family: Gilroy-Bold;
+    font-size: 6em;
+}
+
+.titik-kanan {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: -45px;
+    top: -15px;
+    opacity: 0.8;
+}
+
+.titik-kiri {
+    position: absolute;
+    left: -45px;
+    bottom: -15px;
+    opacity: 0.8;
+}
