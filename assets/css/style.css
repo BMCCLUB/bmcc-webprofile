@@ -154,9 +154,69 @@
     padding: .5rem;
     /* left: 20%; */
 }
-
 .about-us {
     position: relative;
     height: 100vh;
-    background-color: #0B1D26;
+    background-color: #0b1d26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us h2 {
+    color: #fff;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+.vismiscard h2 {
+    color: #fff;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2em;
+    line-height: 2rem;
+    font-family: Mulish;
+    font-style: normal;
+}
+
+.about-us hr {
+    border: 2px solid rgb(255, 255, 255);
+    width: 10%;
+    background-color: #fff;
+}
+
+.tulisan p {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-family: Mulish;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.visimisi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vismiscard {
+    background-color: #fff;
+    margin: 0 5%;
+    width: 300px;
+    padding: 2rem 0;
+    border-radius: 20px;
+    box-shadow: 10px 30px 20px rgb(255, 255, 255, 0.4);
+}
+
+.vismiscard p {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-family: Mulish;
+    font-style: normal;
+    font-size: 0.7em;
+    line-height: 1.3rem;
 }
