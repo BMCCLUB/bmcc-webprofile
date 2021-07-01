@@ -221,6 +221,8 @@
     line-height: 1.3rem;
 }
 
+/* ini merch */
+
 .merch {
     position: relative;
     height: 100vh;
@@ -452,7 +454,7 @@
     border-bottom: 14px solid transparent;
     transform: translateY(-50%) scale(0.4);
   
-  }
+}
 
 .textBox-left .arrow-right-artikel2:before {
     content: "";
@@ -463,4 +465,87 @@
     top: 50%;
     right: -40px;
     transform: translateY(-50%);
-  }
+}
+
+/* ini footer @adiadnyana22 tolong bang*/ 
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #0B1D26;
+    padding-top: 10%;
+}
+
+.box-footer{
+    display: flex;
+    background-color: #0B1D26;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.info-bmcc{
+    width: 40%;
+    margin-right: 25%;
+}
+
+.judul-info h5{
+    color: #FFFFFF;
+    font-family: Chronicle;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.text-info p{
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.more-site{
+    width: 30%;
+    margin-right: 10%;
+}
+
+.more-about-us{
+    width: 30%;
+}
+
+.judul-more h5{
+    font-family: Gilroy;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+}
+
+.link-more{
+    text-align: left;
+    align-items: base;
+}
+
+.link-more a{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.copyrights{
+    position: absolute;
+    padding-left: 10%;
+    left: 0;
+    bottom: 0;
+}
+
+.copyrights p{
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
