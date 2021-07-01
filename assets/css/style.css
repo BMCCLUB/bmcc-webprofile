@@ -9,6 +9,13 @@
     position: relative;
 }
 
+/* Section Navbar */
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
 .navbar-custom {
     /* background-color: #0B1D26; */
     width: 100%;
@@ -16,8 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 10;
 }
 
 .logo a {
@@ -67,6 +72,7 @@
     text-decoration: none;
 }
 
+/* Section Banner */
 .banner {
     width: 100%;
     height: 100vh;
@@ -154,79 +160,252 @@
     padding: .5rem;
     /* left: 20%; */
 }
+
+/* Section About Us */
 .about-us {
-    position: relative;
-    height: 100vh;
+    padding: 5%;
     background-color: #0b1d26;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .judul h2 {
-    color: #fff;
+    color: #E5E5E5;
     text-align: center;
-    font-family: Gilroy;
-    font-size: 3em;
-    line-height: 1.2em;
-}
-
-.vismiscard h2 {
-    color: #fff;
-    text-align: center;
-    font-family: Gilroy;
-    font-size: 2em;
-    line-height: 2rem;
-    font-family: Mulish;
-    font-style: normal;
+    font-family: Gilroy-Bold;
+    font-size: 4em;
 }
 
 .judul hr {
     border: 2px solid rgb(255, 255, 255);
-    width: 10%;
-    background-color: #fff;
+    width: 15%;
+    margin: 1% auto;
 }
 
 .tulisan p {
-    color: #fff;
+    color: #aaa;
     text-align: center;
-    width: 60%;
+    width: 80%;
     font-family: Mulish;
-    font-style: normal;
     font-size: 1em;
+    line-height: 2;
+    margin: auto;
 }
 
 .visimisi {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 5% 0;
+}
+
+.vismiscard h2 {
+    color: #1e1e1e;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .vismiscard {
     background-color: #fff;
     margin: 0 5%;
-    width: 300px;
     padding: 2rem 0;
     border-radius: 20px;
     box-shadow: 10px 30px 20px rgb(255, 255, 255, 0.4);
 }
 
 .vismiscard p {
-    color: #fff;
+    color: #666;
     text-align: center;
     width: 60%;
     font-family: Mulish;
-    font-style: normal;
-    font-size: 0.7em;
-    line-height: 1.3rem;
+    font-size: 0.8em;
 }
 
-/* ini merch */
+/* Section Event */
+/* .event {
+    background-color: #0B1D26;
+}
 
+.judul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+}
+
+.judul h2 {
+    letter-spacing: 3px;
+    font-family: Gilroy-bold;
+    font-size: 60px;
+}
+
+.judul hr {
+    position: absolute;
+    top: 80%;   
+    border : 1px solid #ffffff;
+    width : 10%
+}
+
+.selikur h1 {
+    position: absolute;
+    bottom: 100px;
+    left: -150px;
+    font-family: Gilroy-bold;
+    font-size: 240px;
+    color : #ffffff;
+    opacity: 0.1;
+    z-index: 10;
+}
+
+.bmcc-judul-event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBD784;
+}
+
+.bmcc-judul-event hr {
+    border: 1px solid #FBD784;
+    width: 10%;
+}
+
+.bmcc-judul-event h5 {
+    font-family: Gilroy-Bold;
+    letter-spacing: 3px;
+    margin-left: 1rem;
+}
+
+.container {
+    top: 90px;
+    position: relative;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.container .textBox {
+    position: relative;
+    right : 5%;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.container .textBox h1{
+    position: static;
+    font-family: Chronicle Display;
+}
+
+.container .textBox p {
+    font-family: Gilroy;
+}
+
+.container .textBox a {
+    color: #FBD784;
+}
+
+.container .arrow-right:after {
+    top: 50%;
+    right: -50px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border-left: 14px solid #FBD784;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    transform: translateY(-50%) scale(0.4);
+}
+
+.container .arrow-right:before {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #FBD784;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+
+.event .imgbox-left{
+    position: relative;
+    width : 50%;
+    height : 100%;
+}
+.event .imgbox-left:before {
+    content: "";
+    position: absolute;
+}
+
+.event .imgbox-left img {
+    right: 10%;
+    position: absolute;
+}
+
+.container-left {
+    justify-content: space-between;
+    left: 50%;
+    display: flex;
+    max-width: 600px;
+    color: #fff;
+}
+
+.selikur-left h1 {
+    position: absolute;
+    font-family: Gilroy-bold;
+    font-size: 240px;
+    color : #ffffff;
+    opacity: 0.1;
+    z-index: 10;
+}
+
+.textBox-left{
+    top: 100px;
+    left: 20%;
+}
+
+.textBox-left a{
+    color: #FBD784;
+}
+
+.textBox-left h1{
+    position: static;
+    font-family: Chronicle Display;
+}
+
+.textBox-left .arrow-right-artikel2:after {
+    top: 50%;
+    right: -50px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border-left: 14px solid #FBD784;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    transform: translateY(-50%) scale(0.4);
+  
+}
+
+.textBox-left .arrow-right-artikel2:before {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #FBD784;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+} */
+
+/* Section Merch */
 .merch {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #0B1D26;
+    padding: 5% 0;
 }
 
 .kotak-merch {
@@ -292,260 +471,41 @@
     opacity: 0.8;
 }
 
-/* CORONA WE HADEH GW KASI JARAK BIAR GA KETULAR CUIH (BAYU EVENT) */
-
-
-.event {
+/* Section Footer */ 
+footer {
     background-color: #0B1D26;
+    padding: 3% 0;
 }
-.judul {
-    display: flex;
-    justify-content:center;
-    align-items: center;
+
+.footer-bmcc h2 {
     color: #fff;
-}
-.judul h2 {
-    letter-spacing: 3px;
-    font-family: Gilroy-bold;
-    font-size: 60px;
-}
-
-.judul hr {
-    position: absolute;
-    top: 80%;   
-    border : 1px solid #ffffff;
-    width : 10%
-}
-.selikur h1 {
-    position: absolute;
-    bottom: 100px;
-    left: -150px;
-    font-family: Gilroy-bold;
-    font-size: 240px;
-    color : #ffffff;
-    opacity: 0.1;
-    z-index: 10;
-}
-
-.bmcc-judul-event {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* grid-template-columns: 1fr 5fr 2fr; */
-    color: #FBD784;
-}
-
-.bmcc-judul-event hr {
-    border: 1px solid #FBD784;
-    width: 10%;
-}
-
-.bmcc-judul-event h5 {
-    font-family: Gilroy-Bold;
-    letter-spacing: 3px;
-    margin-left: 1rem;
-}
-
-.container {
-    top: 90px;
-    position: relative;
-    width : 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    color: #ffffff;
-}
-.container .textBox {
-    position: relative;
-    right : 5%;
-    max-width: 600px;
-    z-index: 1;
-}
-
-.container .textBox h1{
-    position: static;
-    font-family: Chronicle Display;
-}
-
-.container .textBox p {
-    font-family: Gilroy;
-}
-
-.container .textBox a {
-    color: #FBD784;
-}
-
-.container .arrow-right:after {
-    top: 50%;
-    right: -50px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    border-left: 14px solid #FBD784;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    transform: translateY(-50%) scale(0.4);
-  
-  }
-
-.container .arrow-right:before {
-    content: "";
-    width: 25px;
-    height: 1px;
-    background: #FBD784;
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-}
-
-.event .imgbox-left{
-    position: relative;
-    width : 50%;
-    height : 100%;
-}
-.event .imgbox-left:before {
-    content: "";
-    position: absolute;
-}
-
-.event .imgbox-left img {
-    right: 10%;
-    position: absolute;
-}
-.container-left {
-    justify-content: space-between;
-    left: 50%;
-    display: flex;
-    max-width: 600px;
-    color: #fff;
-}
-.selikur-left h1 {
-    position: absolute;
-    font-family: Gilroy-bold;
-    font-size: 240px;
-    color : #ffffff;
-    opacity: 0.1;
-    z-index: 10;
-}
-.textBox-left{
-    top: 100px;
-    left: 20%;
-}
-
-.textBox-left a{
-    color: #FBD784;
-}
-
-.textBox-left h1{
-    position: static;
-    font-family: Chronicle Display;
-}
-
-.textBox-left .arrow-right-artikel2:after {
-    top: 50%;
-    right: -50px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    border-left: 14px solid #FBD784;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    transform: translateY(-50%) scale(0.4);
-  
-}
-
-.textBox-left .arrow-right-artikel2:before {
-    content: "";
-    width: 25px;
-    height: 1px;
-    background: #FBD784;
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-}
-
-/* ini footer @adiadnyana22 tolong bang*/ 
-
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: #0B1D26;
-    padding-top: 10%;
-}
-
-.box-footer{
-    display: flex;
-    background-color: #0B1D26;
-    position: absolute;
-    width: 100%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.info-bmcc{
-    width: 40%;
-    margin-right: 25%;
-}
-
-.judul-info h5{
-    color: #FFFFFF;
     font-family: Chronicle;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 38px;
 }
 
-.text-info p{
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 32px;
+.footer-bmcc p {
+    color: #fff;
+    font-family: Gilroy-Bold;
+    letter-spacing: 1px;
+    line-height: 2;
 }
 
-.more-site{
-    width: 30%;
-    margin-right: 10%;
-}
-
-.more-about-us{
-    width: 30%;
-}
-
-.judul-more h5{
-    font-family: Gilroy;
-    font-size: 24px;
-    line-height: 32px;
+.footer-list h3 {
     color: #FBD784;
+    font-family: Gilroy-Bold;
 }
 
-.link-more{
-    text-align: left;
-    align-items: base;
+.footer-list ul {
+    list-style: none;
 }
 
-.link-more a{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
+.footer-list ul li {
+    padding: 0.3rem 0;
 }
 
-.copyrights{
-    position: absolute;
-    padding-left: 10%;
-    left: 0;
-    bottom: 0;
+.footer-list ul li a {
+    color: #fff;
 }
 
-.copyrights p{
-    font-family: Gilroy;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
-    opacity: 0.5;
+.copyright {
+    color: rgb(255, 255, 255, 0.5);
 }
