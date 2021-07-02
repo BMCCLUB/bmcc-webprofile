@@ -415,8 +415,17 @@ nav {
     margin-top: 5%;
 }
 
+@keyframes coba {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .kotak-bewarna {
-    width: 60%;
+    width: 70%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -427,6 +436,7 @@ nav {
 .kotak-bewarna img {
     width: 60%;
     z-index: 5;
+    animation: coba;
 }
 
 .nama-merch-kanan {
@@ -469,6 +479,25 @@ nav {
     left: -45px;
     bottom: -15px;
     opacity: 0.8;
+}
+
+.arrow-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-slide button {
+    margin: 1rem 2rem;
+    background-color: transparent;
+    border: 0;
+    color: #FBD784;
+    font-size: 2em;
+    transition: .3s;
+}
+
+.arrow-slide button:hover {
+    color: rgb(251, 215, 132, 0.6);
 }
 
 /* Section Footer */ 
