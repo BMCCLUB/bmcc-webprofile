@@ -415,15 +415,6 @@ nav {
     margin-top: 5%;
 }
 
-@keyframes coba {
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .kotak-bewarna {
     width: 70%;
     position: relative;
@@ -436,8 +427,38 @@ nav {
 .kotak-bewarna img {
     width: 60%;
     z-index: 5;
-    animation: coba;
 }
+
+.kelas-animasi-keluar {
+    animation-name: keluar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.kelas-animasi-masuk {
+    animation-name: masuk;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes masuk {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes keluar {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 
 .nama-merch-kanan {
     position: absolute;
@@ -445,6 +466,7 @@ nav {
     bottom: 10%;
     color: #000000;
     opacity: 0.1;
+    overflow: hidden;
 }
 
 .nama-merch-kiri {
@@ -453,6 +475,7 @@ nav {
     top: 10%;
     color: #000000;
     opacity: 0.1;
+    overflow: hidden;
 }
 
 .nama-merch-kanan h5{
@@ -493,7 +516,6 @@ nav {
     border: 0;
     color: #FBD784;
     font-size: 2em;
-    transition: .3s;
 }
 
 .arrow-slide button:hover {

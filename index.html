@@ -314,6 +314,7 @@
             }];
             let currIndex = 0;
             $('#left-arr').click(() => {
+                // rightImgText.style.width = 0;
                 currIndex = (currIndex + gambar.length - 1) % gambar.length;
                 merchImg.setAttribute('src', `assets/images/${gambar[currIndex].linkGambar}`);
                 leftImgText.innerHTML = gambar[currIndex].textGambar;
