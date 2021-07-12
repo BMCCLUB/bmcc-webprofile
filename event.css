@@ -1,0 +1,499 @@
+/* Primary Color : #0B1D26 */
+/* Seconday Color : #FBD784 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    position: relative;
+    background-color: #0B1D26;
+}
+
+.navbar-custom {
+    /* background-color: #0B1D26; */
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo a {
+    font-size: 2em;
+    font-family: Chronicle;
+    color: #fff;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0 1.5rem;
+}
+
+.nav-list li a {
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #FBD784;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.contact a {
+    font-family: Gilroy-Bold;
+    color: #fff;
+    font-weight: 900;
+}
+
+.contact a:hover{
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 5;
+    background: linear-gradient(to top, #0B1D26, transparent);
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter-banner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+}
+
+.banner h1 {
+    position: absolute;
+    object-fit: cover;
+    font-size: 20em;
+    font-family: Quartzo;
+    margin-bottom: 10%;
+    color: #fff;
+}
+
+#text-banner {
+    position: absolute;
+    bottom: 10%;
+    z-index: 6;
+}
+
+#text-banner h2 {
+    font-size: 4em;
+    font-family: Chronicle;
+    color: #fff;
+    text-align: center;
+}
+
+.scroll-down {
+    color: #fff;
+}
+
+.scroll-down span {
+    color: #fff;
+    padding: .5rem;
+}
+
+.about-us {
+    position: relative;
+    height: 100vh;
+    background-color: #0B1D26;
+}
+
+.event {
+    background-color: #0B1D26;
+}
+.judul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+}
+.judul h2 {
+    letter-spacing: 3px;
+    font-family: Gilroy-bold;
+    font-size: 100px;
+}
+
+.judul hr {
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;   
+    border : 3px solid #ffffff;
+    width : 120px;
+}
+.selikur h1 {
+    position: absolute;
+    bottom: 55px;
+    left: -200px;
+    font-family: Gilroy-bold;
+    font-size: 240px;
+    color : #ffffff;
+    opacity: 0.1;
+    z-index: 10;
+}
+
+.bmcc-judul-event2 {
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBD784;
+}
+
+.bmcc-judul-event2 hr {
+    border: 1px solid #FBD784;
+    width: 10%;
+}
+
+.bmcc-judul-event2 h5 {
+    font-size: 18px;
+    font-family: Gilroy-Bold;
+    letter-spacing: 5px;
+    margin-left: 1rem;
+}
+
+.hadeh {
+    height: 100vh;
+}
+
+.container-event {
+    top: 90px;
+    bottom: 100px;
+    position: relative;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    color: #ffffff;
+}
+.container-event .textBox {
+    position: relative;
+    right : 5%;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.container-event .textBox h1{
+    font-size: 50px;
+    font-family: Chronicle Display;
+}
+
+.container-event .textBox p {
+    font-size: 18px;
+    font-family: Gilroy-bold;
+}
+
+.container-event .textBox a {
+    font-family: Gilroy-bold;
+    color: #FBD784;
+}
+
+.container-event .imgbox {
+    left: 200px;
+}
+
+.container-event .imgbox img {
+    border-radius: 10px;
+}
+
+.textBox  a {
+    font-family: Gilroy-bold;
+    color: #FBD784;
+	position: relative;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.textBox a:before, a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	top: 50%;
+	background: #FBD784;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+.textBox  a:before {	
+	width: 40px;
+	right: 110%;
+}
+.textBox  a:after {
+	width: 0%;
+	left: 110%;
+}
+
+.textBox  a:hover:before {
+	width: 0%;
+}
+.textBox  a:hover:after {
+	width: 30px;
+}
+
+.textBox  a span {
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 100%;
+	right: -45%;
+	bottom: 10px;
+}
+
+.textBox  a span:before,a span:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 2px;
+	top: 0;
+	right: 0;
+	background: #FBD784;
+	border-radius: 4px;
+	transform: rotate(45deg);
+	transition: all 0.15s;
+	transition-delay: 0.25s;
+	opacity: 0;
+}
+
+.textBox a span:before {
+	top: 30px;
+	right: 0;
+	transform: rotate(45deg);
+}
+
+.textBox  a span:after {
+	top: 14px;
+	right: 0;
+	transform: rotate(-45deg);
+}
+
+.textBox  a:hover span:before {
+	width: 15px;
+	top: 17px;
+	right: -4px;
+	opacity: 1;
+}
+
+.textBox  a:hover span:after {
+	width: 15px;
+	top: 27px;
+	right: -4px;
+	opacity: 1;
+}
+
+.event .imgbox-left{
+    top: 220px;
+    position: relative;
+    width : 50%;
+    height : 100%;
+}
+.event .imgbox-left:before {
+    content: "";
+    position: absolute;
+}
+
+.event .imgbox-left img {
+    border-radius: 10px;
+    right: 20%;
+    position: absolute;
+}
+.container-left {
+    bottom : 550px;
+    justify-content: space-between;
+    left: 50%;
+    display: flex;
+    max-width: 600px;
+    color: #fff;
+}
+
+.bmcc-judul-event-left {
+    right: 40px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBD784;
+}
+
+.bmcc-judul-event-left hr {
+    border: 1px solid #FBD784;
+    width: 10%;
+}
+
+.bmcc-judul-event-left h5 {
+    font-size: 18px;
+    font-family: Gilroy-Bold;
+    letter-spacing: 5px;
+    margin-left: 1rem;
+}
+
+.selikur-left h1 {
+    bottom: 200px;
+    left: -70px;
+    position: absolute;
+    font-family: Gilroy-bold;
+    font-size: 240px;
+    color : #ffffff;
+    opacity: 0.1;
+    z-index: 10;
+}
+.textBox-left{
+    top: 40px;
+    left: 10%;
+}
+
+
+.textBox-left p {
+    font-family: Gilroy-bold;
+    font-size: 18px;
+}
+
+.textBox-left h1 {
+    font-family: Chronicle Display;
+    font-size: 64px;
+}
+
+.textBox-left  a {
+    font-family: Gilroy-bold;
+    color: #FBD784;
+	position: relative;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.textBox-left a:before,a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	top: 50%;
+	background: #FBD784;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+.textBox-left  a:before {	
+	width: 30px;
+	right: 110%;
+}
+.textBox-left  a:after {
+	width: 0%;
+	left: 110%;
+}
+
+.textBox-left  a:hover:before {
+	width: 0%;
+}
+.textBox-left  a:hover:after {
+	width: 30px;
+}
+
+.textBox-left  a span {
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 100%;
+	right: -45%;
+	bottom: 10px;
+}
+
+.textBox-left  a span:before,a span:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 2px;
+	top: 0;
+	right: 0;
+	background: #FBD784;
+	border-radius: 4px;
+	transform: rotate(45deg);
+	transition: all 0.15s;
+	transition-delay: 0.25s;
+	opacity: 0;
+}
+
+.textBox-left a span:before {
+	top: 30px;
+	right: 0;
+	transform: rotate(45deg);
+}
+
+.textBox-left  a span:after {
+	top: 14px;
+	right: 0;
+	transform: rotate(-45deg);
+}
+
+.textBox-left  a:hover span:before {
+	width: 15px;
+	top: 17px;
+	right: -4px;
+	opacity: 1;
+}
+
+.textBox-left  a:hover span:after {
+	width: 15px;
+	top: 27px;
+	right: -4px;
+	opacity: 1;
+}
+
+.artikel3 {
+    bottom : 300px;
+}
+
+.selikur-bot h1 {
+    bottom : 20px;
+    position: absolute;
+    left: -200px;
+    font-family: Gilroy-bold;
+    font-size: 240px;
+    color : #ffffff;
+    opacity: 0.1;
+    z-index: 3;
+}

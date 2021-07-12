@@ -7,13 +7,7 @@
     box-sizing: border-box;
     font-family: Gilroy;
     position: relative;
-}
-
-/* Section Navbar */
-nav {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+    background-color: #0B1D26;
 }
 
 .navbar-custom {
@@ -23,6 +17,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 10;
 }
 
 .logo a {
@@ -72,7 +68,6 @@ nav {
     text-decoration: none;
 }
 
-/* Section Banner */
 .banner {
     width: 100%;
     height: 100vh;
@@ -125,25 +120,6 @@ nav {
     z-index: 6;
 }
 
-.bmcc-judul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* grid-template-columns: 1fr 5fr 2fr; */
-    color: #FBD784;
-}
-
-.bmcc-judul hr {
-    border: 1px solid #FBD784;
-    width: 10%;
-}
-
-.bmcc-judul h5 {
-    font-family: Gilroy-Bold;
-    letter-spacing: 3px;
-    margin-left: 1rem;
-}
-
 #text-banner h2 {
     font-size: 4em;
     font-family: Chronicle;
@@ -161,79 +137,21 @@ nav {
     /* left: 20%; */
 }
 
-/* Section About Us */
 .about-us {
-    padding: 5%;
-    background-color: #0b1d26;
-}
-
-.judul h2 {
-    color: #E5E5E5;
-    text-align: center;
-    font-family: Gilroy-Bold;
-    font-size: 4em;
-}
-
-.judul hr {
-    border: 2px solid rgb(255, 255, 255);
-    width: 15%;
-    margin: 1% auto;
-}
-
-.tulisan p {
-    color: #aaa;
-    text-align: center;
-    width: 80%;
-    font-family: Mulish;
-    font-size: 1em;
-    line-height: 2;
-    margin: auto;
-}
-
-.visimisi {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 0;
-}
-
-.vismiscard h2 {
-    color: #1e1e1e;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.vismiscard {
-    background-color: #fff;
-    margin: 0 5%;
-    padding: 2rem 0;
-    border-radius: 20px;
-    box-shadow: 10px 30px 20px rgb(255, 255, 255, 0.4);
-}
-
-.vismiscard p {
-    color: #666;
-    text-align: center;
-    width: 60%;
-    font-family: Mulish;
-    font-size: 0.8em;
-}
-
-/* Section Event */
-/* .event {
+    position: relative;
+    height: 100vh;
     background-color: #0B1D26;
 }
 
+.event {
+    background-color: #0B1D26;
+}
 .judul {
     display: flex;
     justify-content:center;
     align-items: center;
     color: #fff;
 }
-
 .judul h2 {
     letter-spacing: 3px;
     font-family: Gilroy-bold;
@@ -246,11 +164,9 @@ nav {
     border : 1px solid #ffffff;
     width : 10%
 }
-
 .selikur h1 {
     position: absolute;
-    bottom: 100px;
-    left: -150px;
+    margin-left: 150px;
     font-family: Gilroy-bold;
     font-size: 240px;
     color : #ffffff;
@@ -262,6 +178,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* grid-template-columns: 1fr 5fr 2fr; */
     color: #FBD784;
 }
 
@@ -286,7 +203,6 @@ nav {
     z-index: 2;
     color: #ffffff;
 }
-
 .container .textBox {
     position: relative;
     right : 5%;
@@ -317,7 +233,8 @@ nav {
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
     transform: translateY(-50%) scale(0.4);
-}
+  
+  }
 
 .container .arrow-right:before {
     content: "";
@@ -328,8 +245,8 @@ nav {
     top: 50%;
     right: -40px;
     transform: translateY(-50%);
-}
-
+  }
+/* dari sni */
 .event .imgbox-left{
     position: relative;
     width : 50%;
@@ -344,7 +261,6 @@ nav {
     right: 10%;
     position: absolute;
 }
-
 .container-left {
     justify-content: space-between;
     left: 50%;
@@ -352,7 +268,6 @@ nav {
     max-width: 600px;
     color: #fff;
 }
-
 .selikur-left h1 {
     position: absolute;
     font-family: Gilroy-bold;
@@ -361,7 +276,6 @@ nav {
     opacity: 0.1;
     z-index: 10;
 }
-
 .textBox-left{
     top: 100px;
     left: 20%;
@@ -369,11 +283,6 @@ nav {
 
 .textBox-left a{
     color: #FBD784;
-}
-
-.textBox-left h1{
-    position: static;
-    font-family: Chronicle Display;
 }
 
 .textBox-left .arrow-right-artikel2:after {
@@ -387,7 +296,7 @@ nav {
     border-bottom: 14px solid transparent;
     transform: translateY(-50%) scale(0.4);
   
-}
+  }
 
 .textBox-left .arrow-right-artikel2:before {
     content: "";
@@ -398,165 +307,4 @@ nav {
     top: 50%;
     right: -40px;
     transform: translateY(-50%);
-} */
-
-/* Section Merch */
-.merch {
-    position: relative;
-    /* height: 100vh; */
-    background-color: #0B1D26;
-    padding: 5% 0;
-}
-
-.kotak-merch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.kotak-bewarna {
-    width: 70%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(208.18deg, #FBD784 9.05%, #5A98F2 76.74%);
-    border-radius: 24px;
-}
-
-.kotak-bewarna img {
-    width: 60%;
-    z-index: 5;
-}
-
-.kelas-animasi-keluar {
-    animation-name: keluar;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.kelas-animasi-masuk {
-    animation-name: masuk;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes masuk {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes keluar {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-
-.nama-merch-kanan {
-    position: absolute;
-    right: 5%;
-    bottom: 10%;
-    color: #000000;
-    opacity: 0.1;
-    overflow: hidden;
-}
-
-.nama-merch-kiri {
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    color: #000000;
-    opacity: 0.1;
-    overflow: hidden;
-}
-
-.nama-merch-kanan h5{
-    font-family: Gilroy-Bold;
-    font-size: 6em;
-}
-
-.nama-merch-kiri h5{
-    font-family: Gilroy-Bold;
-    font-size: 6em;
-}
-
-.titik-kanan {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: -45px;
-    top: -15px;
-    opacity: 0.8;
-}
-
-.titik-kiri {
-    position: absolute;
-    left: -45px;
-    bottom: -15px;
-    opacity: 0.8;
-}
-
-.arrow-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow-slide button {
-    margin: 1rem 2rem;
-    background-color: transparent;
-    border: 0;
-    color: #FBD784;
-    font-size: 2em;
-}
-
-.arrow-slide button:hover {
-    color: rgb(251, 215, 132, 0.6);
-}
-
-/* Section Footer */ 
-footer {
-    background-color: #0B1D26;
-    padding: 3% 0;
-}
-
-.footer-bmcc h2 {
-    color: #fff;
-    font-family: Chronicle;
-}
-
-.footer-bmcc p {
-    color: #fff;
-    font-family: Gilroy-Bold;
-    letter-spacing: 1px;
-    line-height: 2;
-}
-
-.footer-list h3 {
-    color: #FBD784;
-    font-family: Gilroy-Bold;
-}
-
-.footer-list ul {
-    list-style: none;
-}
-
-.footer-list ul li {
-    padding: 0.3rem 0;
-}
-
-.footer-list ul li a {
-    color: #fff;
-}
-
-.copyright {
-    color: rgb(255, 255, 255, 0.5);
-}
+  }
