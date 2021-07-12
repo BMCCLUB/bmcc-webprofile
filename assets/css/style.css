@@ -9,6 +9,13 @@
     position: relative;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /* Section Navbar */
 nav {
     position: fixed;
@@ -223,182 +230,70 @@ nav {
 }
 
 /* Section Event */
-/* .event {
-    background-color: #0B1D26;
+.event {
+    background-color: #0b1d26;
+    padding: 5% 0;
 }
 
-.judul {
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.event .bmcc-judul h5 {
+    font-size: 1em;
+}
+
+.single-event {
+    padding: 3% 0;
+}
+
+.text-event {
+    width: 75%;
+    position: relative;
+}
+
+.isi-event {
+    padding: 1rem 0;
     color: #fff;
 }
 
-.judul h2 {
-    letter-spacing: 3px;
-    font-family: Gilroy-bold;
-    font-size: 60px;
+.isi-event h2 {
+    font-family: Chronicle;
+    font-size: 3em;
+    letter-spacing: 2px;
 }
 
-.judul hr {
-    position: absolute;
-    top: 80%;   
-    border : 1px solid #ffffff;
-    width : 10%
+.isi-event p {
+    line-height: 2;
 }
 
-.selikur h1 {
-    position: absolute;
-    bottom: 100px;
-    left: -150px;
-    font-family: Gilroy-bold;
-    font-size: 240px;
-    color : #ffffff;
-    opacity: 0.1;
-    z-index: 10;
+.isi-event a {
+    color: #FBD784;
 }
 
-.bmcc-judul-event {
+.img-event {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FBD784;
+    height: 100%;
 }
 
-.bmcc-judul-event hr {
-    border: 1px solid #FBD784;
-    width: 10%;
+.img-event img{
+    width: 100%;
 }
 
-.bmcc-judul-event h5 {
+.num-year {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+}
+
+.num-year span {
+    color: rgb(255, 255, 255, 0.2);
+    font-size: 10rem;
     font-family: Gilroy-Bold;
-    letter-spacing: 3px;
-    margin-left: 1rem;
+    letter-spacing: 2px;
 }
 
-.container {
-    top: 90px;
-    position: relative;
-    width : 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    color: #ffffff;
+.right-flex {
+    justify-content: flex-end !important;
 }
-
-.container .textBox {
-    position: relative;
-    right : 5%;
-    max-width: 600px;
-    z-index: 1;
-}
-
-.container .textBox h1{
-    position: static;
-    font-family: Chronicle Display;
-}
-
-.container .textBox p {
-    font-family: Gilroy;
-}
-
-.container .textBox a {
-    color: #FBD784;
-}
-
-.container .arrow-right:after {
-    top: 50%;
-    right: -50px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    border-left: 14px solid #FBD784;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    transform: translateY(-50%) scale(0.4);
-}
-
-.container .arrow-right:before {
-    content: "";
-    width: 25px;
-    height: 1px;
-    background: #FBD784;
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-}
-
-.event .imgbox-left{
-    position: relative;
-    width : 50%;
-    height : 100%;
-}
-.event .imgbox-left:before {
-    content: "";
-    position: absolute;
-}
-
-.event .imgbox-left img {
-    right: 10%;
-    position: absolute;
-}
-
-.container-left {
-    justify-content: space-between;
-    left: 50%;
-    display: flex;
-    max-width: 600px;
-    color: #fff;
-}
-
-.selikur-left h1 {
-    position: absolute;
-    font-family: Gilroy-bold;
-    font-size: 240px;
-    color : #ffffff;
-    opacity: 0.1;
-    z-index: 10;
-}
-
-.textBox-left{
-    top: 100px;
-    left: 20%;
-}
-
-.textBox-left a{
-    color: #FBD784;
-}
-
-.textBox-left h1{
-    position: static;
-    font-family: Chronicle Display;
-}
-
-.textBox-left .arrow-right-artikel2:after {
-    top: 50%;
-    right: -50px;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    border-left: 14px solid #FBD784;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    transform: translateY(-50%) scale(0.4);
-  
-}
-
-.textBox-left .arrow-right-artikel2:before {
-    content: "";
-    width: 25px;
-    height: 1px;
-    background: #FBD784;
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-} */
 
 /* Section Merch */
 .merch {
