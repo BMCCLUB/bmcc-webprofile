@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: Gilroy;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 .flex-center {
@@ -20,7 +21,8 @@
 nav {
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
+    transition: .5s;
 }
 
 .navbar-custom {
@@ -47,6 +49,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0 !important;
+    /* display: none; */
 }
 
 .nav-list li {
@@ -67,6 +70,7 @@ nav {
     background-color: #FBD784;
     padding: .5rem 1rem;
     border-radius: 20px;
+    /* display: none; */
 }
 
 .contact a {
@@ -77,6 +81,80 @@ nav {
 
 .contact a:hover{
     text-decoration: none;
+}
+
+.bars {
+    display: none;
+}
+
+.bars span{
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navigasi {
+    position: fixed;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: #0B1D26;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.logo-hidden {
+    margin-bottom: 20px;
+}
+
+.logo-hidden a {
+    font-size: 3em;
+    font-family: Chronicle;
+    color: #fff;
+}
+
+.nav-list-hidden {
+    list-style: none;
+}
+
+.nav-list-hidden li {
+    padding: 10px 0;
+}
+
+.nav-list-hidden li a {
+    color: #fff;
+    font-size: 2em;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close span {
+    color: #fff;
+}
+
+.contact-hidden {
+    background-color: #FBD784;
+    border-radius: 50px;
+}
+
+.contact-hidden a {
+    color: #0B1D26;
+    font-family: Gilroy-Bold;
+    letter-spacing: 2px;
+    display: block;
+    padding: 10px 50px;
 }
 
 /* Section Banner */
@@ -130,6 +208,7 @@ nav {
     position: absolute;
     bottom: 10%;
     z-index: 6;
+    width: 90%;
 }
 
 .bmcc-judul {
@@ -138,6 +217,7 @@ nav {
     align-items: center;
     /* grid-template-columns: 1fr 5fr 2fr; */
     color: #FBD784;
+    margin-bottom: 10px;
 }
 
 .bmcc-judul hr {
@@ -202,7 +282,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 5% 0;
+    margin-bottom: 2%;
 }
 
 .vismiscard h2 {
@@ -215,8 +295,9 @@ nav {
 
 .vismiscard {
     background-color: #fff;
-    margin: 0 5%;
+    margin: 5%;
     padding: 2rem 0;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 10px 30px 20px rgb(255, 255, 255, 0.4);
 }
@@ -230,22 +311,26 @@ nav {
 }
 
 /* Section Event */
-.event {
+.eventSec {
     background-color: #0b1d26;
     padding: 5% 0;
 }
 
-.event .bmcc-judul h5 {
+.event .bmcc-judul h5, .event-hp .bmcc-judul h5 {
     font-size: 1em;
 }
 
 .single-event {
-    padding: 3% 0;
+    padding: 50px 0;
 }
 
 .text-event {
     width: 75%;
     position: relative;
+}
+
+.event-hp .text-event {
+    margin-top: 25px;
 }
 
 .isi-event {
@@ -323,37 +408,58 @@ nav {
     width: 60%;
     z-index: 5;
 }
-
-.kelas-animasi-keluar {
-    animation-name: keluar;
-    animation-duration: 1s;
+/* 
+.animateZeroOpacity {
+    animation-name: zeroOpacity;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 
-.kelas-animasi-masuk {
-    animation-name: masuk;
-    animation-duration: 1s;
+.animateTranslateLeft {
+    animation-name: translateLeft;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 
-@keyframes masuk {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.animateTranslateRight {
+    animation-name: translateRight;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes keluar {
+@keyframes zeroOpacity {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
 }
 
+@keyframes translateLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes translateRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+} */
+
+#merch-img, #leftText, #rightText {
+    transition: all ease-in-out .5s;
+}
 
 .nama-merch-kanan {
     position: absolute;
@@ -387,16 +493,18 @@ nav {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    right: -45px;
-    top: -15px;
+    right: -3vw;
+    top: -2vw;
     opacity: 0.8;
+    width: 15vw;
 }
 
 .titik-kiri {
     position: absolute;
-    left: -45px;
-    bottom: -15px;
+    left: -3vw;
+    bottom: -2vw;
     opacity: 0.8;
+    width: 15vw;
 }
 
 .arrow-slide {
@@ -454,4 +562,253 @@ footer {
 
 .copyright {
     color: rgb(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-list, .contact {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .banner h1 {
+        font-size: 7em;
+        margin-bottom: 60%;
+    }
+
+    .nama-merch-kanan h5 {
+        font-size: 2.5em;
+    }
+
+    .nama-merch-kiri h5 {
+        font-size: 2.5em;
+    }
+
+    .kotak-bewarna {
+        width: 90%;
+    }
+
+    .vismiscard {
+        width: 300px;
+    }
+
+    .judul h2 {
+        font-size: 2.5em;
+    }
+
+    #text-banner h2 {
+        display: none;
+    }
+
+    .isi-event h2 {
+        font-size: 2em;
+    }
+
+    .isi-event p {
+        display: block;
+    }
+
+    .num-year span {
+        font-size: 8em;
+    }
+
+    .event {
+        display: none;
+    }
+
+    .event-hp {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 12em;
+        margin-bottom: 15%;
+    }
+
+    .nama-merch-kanan h5 {
+        font-size: 4.5em;
+    }
+
+    .nama-merch-kiri h5 {
+        font-size: 4.5em;
+    }
+
+    .kotak-bewarna {
+        width: 80%;
+    }
+
+    .vismiscard {
+        width: 250px;
+    }
+
+    .judul h2 {
+        font-size: 3em;
+    }
+
+    #text-banner h2 {
+        display: block;
+    }
+
+    .isi-event h2 {
+        font-size: 2em;
+    }
+
+    .isi-event p {
+        display: block;
+    }
+
+    .num-year span {
+        font-size: 8em;
+    }
+
+    .event {
+        display: block;
+    }
+
+    .event-hp {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 15em;
+        margin-bottom: 10%;
+    }
+
+    .nama-merch-kanan h5 {
+        font-size: 4.5em;
+    }
+
+    .nama-merch-kiri h5 {
+        font-size: 4.5em;
+    }
+
+    .kotak-bewarna {
+        width: 80%;
+    }
+
+    .vismiscard {
+        width: 300px;
+    }
+
+    .judul h2 {
+        font-size: 4em;
+    }
+
+    #text-banner h2 {
+        display: block;
+    }
+
+    .isi-event h2 {
+        font-size: 2.5em;
+    }
+
+    .isi-event p {
+        display: block;
+    }
+
+    .num-year span {
+        font-size: 10em;
+    }
+
+    .event {
+        display: block;
+    }
+
+    .event-hp {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 20em;
+        margin-bottom: 10%;
+    }
+
+    .nama-merch-kanan h5 {
+        font-size: 6em;
+    }
+
+    .nama-merch-kiri h5 {
+        font-size: 6em;
+    }
+
+    .kotak-bewarna {
+        width: 70%;
+    }
+
+    .vismiscard {
+        width: 300px;
+    }
+
+    .judul h2 {
+        font-size: 4em;
+    }
+
+    #text-banner h2 {
+        display: block;
+    }
+
+    .isi-event h2 {
+        font-size: 3em;
+    }
+
+    .isi-event p {
+        display: block;
+    }
+
+    .num-year span {
+        font-size: 10em;
+    }
+
+    .event {
+        display: block;
+    }
+
+    .event-hp {
+        display: none;
+    }
 }
