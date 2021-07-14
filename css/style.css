@@ -1,0 +1,45 @@
+/* 
+    * Notes:
+    ! Variables moved to variables.css
+    ! All section styling moved to each folder to split code and easier to navigate
+*/
+
+/* Variables */
+@import './variables.css';
+
+/* Element Rules */
+@import './rules.css';
+
+/* Section Navbar */
+@import './navbar/navbar.css';
+
+/* Section Banner */
+@import './banner/banner.css';
+
+/* Section About Us */
+@import './about-us/about-us.css';
+
+/* Section Event */
+@import './event/event.css';
+
+/* Section Merch */
+@import './merch/merch.css';
+/* @import './merch/merch-animation.css'; */
+
+/* Section Footer */ 
+@import './footer/footer.css';
+
+/* Responsive */
+@import './responsive/small.css';
+@import './responsive/medium.css';
+@import './responsive/large.css';
+@import './responsive/very-large.css';
+
+/* Custom */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

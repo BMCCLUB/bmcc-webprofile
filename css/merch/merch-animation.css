@@ -1,0 +1,48 @@
+
+.animateZeroOpacity {
+    animation-name: zeroOpacity;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateTranslateLeft {
+    animation-name: translateLeft;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.animateTranslateRight {
+    animation-name: translateRight;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zeroOpacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes translateLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes translateRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

@@ -28,11 +28,11 @@
     <!-- Charset and Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/LOGO_BMCC.png">
+    <link rel="icon" href="images/LOGO_BMCC.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -78,10 +78,10 @@
     <main>
         <!-- Banner Section -->
         <section class="banner">
-            <img src="assets/images/Awan.png" alt="Banner Background" id="awan">
+            <img src="images/Awan.png" alt="Banner Background" id="awan">
             <div class="filter-banner" id="filter"></div>
             <h1 id="title-banner">BMCC</h1>
-            <img src="assets/images/BINUS  MALANG2.png" alt="Banner Gedung" id="gedung">
+            <img src="images/BINUS  MALANG2.png" alt="Banner Gedung" id="gedung">
             <div id="text-banner">
                 <div class="bmcc-judul">
                     <hr>
@@ -110,14 +110,14 @@
                 <div class="visimisi">
                     <div class="vismiscard">
                         <center>
-                            <img src="assets/images/Goal.png" alt="" />
+                            <img src="images/Goal.png" alt="" />
                             <h2>Vision</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </center>
                     </div>
                     <div class="vismiscard">
                         <center>
-                            <img src="assets/images/task.png" alt="" />
+                            <img src="images/task.png" alt="" />
                             <h2>Mission</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </center>
@@ -158,7 +158,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="img-event">
-                                    <img src="assets/images/Article1.png" alt="">
+                                    <img src="images/Article1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <div class="img-event">
-                                    <img src="assets/images/Article2.png" alt="">
+                                    <img src="images/Article2.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -216,7 +216,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="img-event">
-                                    <img src="assets/images/Article3.png" alt="">
+                                    <img src="images/Article3.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="img-event">
-                                    <img src="assets/images/Article1.png" alt="">
+                                    <img src="images/Article1.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -257,7 +257,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="img-event">
-                                    <img src="assets/images/Article2.png" alt="">
+                                    <img src="images/Article2.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -286,7 +286,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="img-event">
-                                    <img src="assets/images/Article3.png" alt="">
+                                    <img src="images/Article3.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -323,7 +323,7 @@
                 </div>
                 <div class="kotak-merch">
                     <div class="kotak-bewarna">
-                        <img src="assets/images/Hoodie.png" alt="#" id="merch-img">
+                        <img src="images/Hoodie.png" alt="#" id="merch-img">
                         <div class="nama-merch-kanan">
                             <h5 id="leftText">HOODIE</h5>
                         </div>
@@ -331,10 +331,10 @@
                             <h5 id="rightText">HOODIE</h5>
                         </div>
                         <div class="titik-kanan">
-                            <img src="assets/images/Dot.png" alt="">
+                            <img src="images/Dot.png" alt="">
                         </div>
                         <div class="titik-kiri">
-                            <img src="assets/images/Dot.png" alt="">
+                            <img src="images/Dot.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -455,7 +455,7 @@
 
             const changeData = (arrow) => {
                 currIndex = (currIndex + gambar.length + (arrow === 'left' ? -1 : 1)) % gambar.length;
-                merchImg.setAttribute('src', `assets/images/${gambar[currIndex].linkGambar}`);
+                merchImg.setAttribute('src', `images/${gambar[currIndex].linkGambar}`);
                 leftImgText.innerHTML = gambar[currIndex].textGambar;
                 rightImgText.innerHTML = gambar[currIndex].textGambar;
             }
