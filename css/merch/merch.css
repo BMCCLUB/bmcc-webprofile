@@ -1,3 +1,5 @@
+@import './merch-animation.css';
+
 .merch {
     position: relative;
     /* height: 100vh; */
@@ -19,6 +21,11 @@
     justify-content: center;
     background: linear-gradient(208.18deg, var(--secondary-color) 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
+}
+
+.merch-selection {
+    display: none;
+    opacity: 0;
 }
 
 .kotak-bewarna img {
