@@ -47,7 +47,8 @@
 } */
 
 .kotak-bewarna .active-slide {
-    display: block;
+    display: flex;
+    justify-content: center;
     opacity: 1;
 }
 

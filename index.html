@@ -505,37 +505,37 @@
             let currIndex = 0;
 
             $('#left-arr').click(() => {
-                if (currIndex > 0) {
-                    currIndex--;
+                // if (currIndex > 0) {
+                    currIndex = (currIndex + gambar.length - 1) % gambar.length;
                     console.log(currIndex);
                     $('.active-slide').addClass('slide-left-hide');
                     $('.slide-left-hide').on('animationend', () => {
-                        $('.merch-selection').eq(currIndex + 1).removeClass('active-slide');
+                        $('.slide-left-hide').removeClass('slide-left-hide');
+                        $('.merch-selection').eq((currIndex + 1) % gambar.length).removeClass('active-slide');
                         $('.merch-selection').eq(currIndex).addClass('active-slide');
                         $('.merch-selection').eq(currIndex).addClass('slide-left-show');
-                        $('.slide-left-hide').removeClass('slide-left-hide');
                         $('.slide-left-show').on('animationend', () => {
                             $('.slide-left-show').removeClass('slide-left-show');
                         });
                     });
-                }
+                // }
             });
 
             $('#right-arr').click(() => {
-                if (currIndex < gambar.length - 1) {
-                    currIndex++;
+                // if (currIndex < gambar.length - 1) {
+                    currIndex = (currIndex + gambar.length + 1) % gambar.length;
                     console.log(currIndex);
                     $('.active-slide').addClass('slide-right-hide');
                     $('.slide-right-hide').on('animationend', () => {
-                        $('.merch-selection').eq(currIndex - 1).removeClass('active-slide');
+                        $('.slide-right-hide').removeClass('slide-right-hide');
+                        $('.merch-selection').eq((currIndex - 1) % gambar.length).removeClass('active-slide');
                         $('.merch-selection').eq(currIndex).addClass('active-slide');
                         $('.merch-selection').eq(currIndex).addClass('slide-right-show');
-                        $('.slide-right-hide').removeClass('slide-right-hide');
                         $('.slide-right-show').on('animationend', () => {
                             $('.slide-right-show').removeClass('slide-right-show');
                         });
                     });
-                }
+                // }
             });
         })
     </script>
