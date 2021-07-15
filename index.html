@@ -323,19 +323,7 @@
                 </div>
                 <div class="kotak-merch">
                     <div class="kotak-bewarna">
-                        <img src="images/Hoodie.png" alt="#" id="merch-img">
-                        <div class="nama-merch-kanan">
-                            <h5 id="leftText">HOODIE</h5>
-                        </div>
-                        <div class="nama-merch-kiri">
-                            <h5 id="rightText">HOODIE</h5>
-                        </div>
-                        <div class="titik-kanan">
-                            <img src="images/Dot.png" alt="">
-                        </div>
-                        <div class="titik-kiri">
-                            <img src="images/Dot.png" alt="">
-                        </div>
+                        <!-- Carousel -->
                     </div>
                 </div>
                 <div class="arrow-slide">
@@ -430,7 +418,7 @@
             }
 
             // Slide Merch
-            const merchImg = document.getElementById('merch-img');
+            /* const merchImg = document.getElementById('merch-img');
             const leftImgText = document.getElementById('leftText');
             const rightImgText = document.getElementById('rightText');
             const gambar = [{
@@ -475,6 +463,79 @@
                 animateOut();
                 changeData('right');
                 animateIn();
+            }); */
+            // <!-- * Merch Slide Renew -->
+            // <!-- ! Error: When go into center of carousel. The animation play twice -->
+            const gambar = [{
+                linkGambar: 'Hoodie.png',
+                textGambar: 'HOODIE'
+            },
+            {
+                linkGambar: 'Goal.png',
+                textGambar: 'KAOS'
+            },
+            {
+                linkGambar: 'Task.png',
+                textGambar: 'LANYARD'
+            }];
+
+            gambar.forEach(el => {
+                $('.kotak-bewarna').append(`
+                <div class="merch-selection">
+                    <img src="images/${el.linkGambar}" alt="#" id="merch-img">
+                    <div class="nama-merch-kanan">
+                        <h5 id="leftText">${el.textGambar}</h5>
+                    </div>
+                    <div class="nama-merch-kiri">
+                        <h5 id="rightText">${el.textGambar}</h5>
+                    </div>
+                    <div class="titik-kanan">
+                        <img src="images/Dot.png" alt="">
+                    </div>
+                    <div class="titik-kiri">
+                        <img src="images/Dot.png" alt="">
+                    </div>
+                </div>
+                `);
+                
+            });
+
+            $('.merch-selection').eq(0).addClass('active-slide');
+
+            let currIndex = 0;
+
+            $('#left-arr').click(() => {
+                if (currIndex > 0) {
+                    currIndex--;
+                    console.log(currIndex);
+                    $('.active-slide').addClass('slide-left-hide');
+                    $('.slide-left-hide').on('animationend', () => {
+                        $('.merch-selection').eq(currIndex + 1).removeClass('active-slide');
+                        $('.merch-selection').eq(currIndex).addClass('active-slide');
+                        $('.merch-selection').eq(currIndex).addClass('slide-left-show');
+                        $('.slide-left-hide').removeClass('slide-left-hide');
+                        $('.slide-left-show').on('animationend', () => {
+                            $('.slide-left-show').removeClass('slide-left-show');
+                        });
+                    });
+                }
+            });
+
+            $('#right-arr').click(() => {
+                if (currIndex < gambar.length - 1) {
+                    currIndex++;
+                    console.log(currIndex);
+                    $('.active-slide').addClass('slide-right-hide');
+                    $('.slide-right-hide').on('animationend', () => {
+                        $('.merch-selection').eq(currIndex - 1).removeClass('active-slide');
+                        $('.merch-selection').eq(currIndex).addClass('active-slide');
+                        $('.merch-selection').eq(currIndex).addClass('slide-right-show');
+                        $('.slide-right-hide').removeClass('slide-right-hide');
+                        $('.slide-right-show').on('animationend', () => {
+                            $('.slide-right-show').removeClass('slide-right-show');
+                        });
+                    });
+                }
             });
         })
     </script>
