@@ -111,6 +111,27 @@ nav {
     font-size: 2em;
 }
 
+.sosmed-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed-hidden {
+    margin-top: 1rem;
+}
+
+.sosmed-hidden li {
+    list-style: none;
+}
+
+.sosmed-hidden li a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5em;
+}
+
 .close {
     position: absolute;
     right: 0;
