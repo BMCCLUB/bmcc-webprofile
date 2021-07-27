@@ -55,4 +55,8 @@
     .event-hp {
         display: block;
     }
+
+    .sosmed-banner {
+        display: none;
+    }
 }

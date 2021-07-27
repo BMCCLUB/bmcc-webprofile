@@ -51,6 +51,30 @@
     width: 90%;
 }
 
+.sosmed-banner {
+    position: absolute;
+    left: 5%;
+    z-index: 5;
+}
+
+.sosmed-banner p {
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 600;
+}
+
+.sosmed-banner ul li {
+    list-style: none;
+}
+
+.sosmed-banner ul li a {
+    font-size: 1.25em;
+    color: #fff;
+    display: block;
+    margin-bottom: .5rem;
+}
+
 .bmcc-judul {
     display: flex;
     justify-content: center;
