@@ -616,7 +616,7 @@
                 const scrollValue = scrollBox.scrollTop;
                 const historyCard = document.querySelectorAll('.history-card');
                 const totalScroll = scrollBox.scrollHeight - 500;
-                const heightPerCard = totalScroll/historyCard.length;
+                const heightPerCard = Math.floor(totalScroll/historyCard.length);
                 $('.history-active').removeClass('history-active');
                 if(Math.floor(scrollValue/heightPerCard) >= historyCard.length){
                     $('.history-year li').eq(historyCard.length - 1).addClass('history-active');    
@@ -629,7 +629,7 @@
                 element.addEventListener('click', () => {
                     const historyCard = document.querySelectorAll('.history-card');
                     const totalScroll = scrollBox.scrollHeight - 500;
-                    const heightPerCard = totalScroll/historyCard.length;
+                    const heightPerCard = Math.floor(totalScroll/historyCard.length);
                     if(index === historyCard.length - 1){
                         scrollBox.scrollTop = totalScroll;
                     } else {

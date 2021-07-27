@@ -17,7 +17,7 @@
 /* total width */
 .history-year::-webkit-scrollbar {
     background-color: transparent;
-    width: 5px;
+    height: 5px;
 }
 
 /* background of the scrollbar except button or resizer */
@@ -27,7 +27,7 @@
 
 /* scrollbar itself */
 .history-year::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: rgb(186, 186, 192, 0.1);
     border-radius: 16px;
 }
 
@@ -63,7 +63,7 @@
 
 /* scrollbar itself */
 .scroll-sq::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: rgb(186, 186, 192, 0.1);
     border-radius: 16px;
 }
 
