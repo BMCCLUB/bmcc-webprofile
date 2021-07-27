@@ -19,6 +19,9 @@
 /* Section About Us */
 @import './about-us/about-us.css';
 
+/* Section History */
+@import './history/history.css';
+
 /* Section Event */
 @import './event/event.css';
 
@@ -42,4 +45,17 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.judul h2 {
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 4em;
+}
+
+.judul hr {
+    border: 2px solid rgb(255, 255, 255);
+    width: 15%;
+    margin: 1% auto;
 }

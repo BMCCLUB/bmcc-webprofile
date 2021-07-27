@@ -3,19 +3,6 @@
     background-color: var(--primary-color);
 }
 
-.judul h2 {
-    color: #E5E5E5;
-    text-align: center;
-    font-family: Gilroy-Bold;
-    font-size: 4em;
-}
-
-.judul hr {
-    border: 2px solid rgb(255, 255, 255);
-    width: 15%;
-    margin: 1% auto;
-}
-
 .tulisan p {
     color: #aaa;
     text-align: center;
