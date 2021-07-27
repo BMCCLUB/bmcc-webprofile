@@ -606,23 +606,37 @@
             // Addition
             document.querySelector('.logo-hidden').addEventListener('click', closeNav);
             const allNav = document.querySelectorAll('.nav-list-hidden li a');
-            console.log(allNav);
             for(let nav of allNav){
                 nav.addEventListener('click', closeNav);
-                console.log(nav);
             }
 
             // History
             const scrollBox = document.querySelector('.scroll-sq');
             scrollBox.addEventListener('scroll', () => {
                 const scrollValue = scrollBox.scrollTop;
-                const heightCard = document.querySelector('.history-card').offsetHeight;
+                const historyCard = document.querySelectorAll('.history-card');
+                const totalScroll = scrollBox.scrollHeight - 500;
+                const heightPerCard = totalScroll/historyCard.length;
                 $('.history-active').removeClass('history-active');
-                $('.history-year li').eq(Math.floor(scrollValue/(heightCard))).addClass('history-active');
+                if(Math.floor(scrollValue/heightPerCard) >= historyCard.length){
+                    $('.history-year li').eq(historyCard.length - 1).addClass('history-active');    
+                } else {
+                    $('.history-year li').eq(Math.floor(scrollValue/heightPerCard)).addClass('history-active');
+                }
             });
-            // document.querySelector('.history-active').addEventListener('click', () => {
-            //     scrollBox.scrollTop = 0;
-            // })
+            const yearHistory = document.querySelectorAll('.history-year li');
+            yearHistory.forEach((element, index) => {
+                element.addEventListener('click', () => {
+                    const historyCard = document.querySelectorAll('.history-card');
+                    const totalScroll = scrollBox.scrollHeight - 500;
+                    const heightPerCard = totalScroll/historyCard.length;
+                    if(index === historyCard.length - 1){
+                        scrollBox.scrollTop = totalScroll;
+                    } else {
+                        scrollBox.scrollTop = heightPerCard * index;
+                    }
+                });
+            });
             
             // <!-- * Merch Slide Renew -->
             // <!-- ! Error: When go into center of carousel. The animation play twice -->
