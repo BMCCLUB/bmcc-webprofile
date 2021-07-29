@@ -59,4 +59,16 @@
     .sosmed-banner {
         display: none;
     }
+
+    .history-year li {
+        font-size: 1.5em;
+    }
+
+    .history-active {
+        font-size: 2.5em !important;
+    }
+
+    .simple-year h3 {
+        font-size: 3em !important;
+    }
 }
