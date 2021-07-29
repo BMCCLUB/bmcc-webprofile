@@ -24,6 +24,7 @@
 
 /* Section Event */
 @import './event/event.css';
+@import './event/activity.css'; /* Sementara */
 
 /* Section Merch */
 @import './merch/merch.css';
